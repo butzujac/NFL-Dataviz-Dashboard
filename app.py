@@ -5,11 +5,11 @@ import seaborn as sns
 import plotly.graph_objects as go
 import numpy as np
 from plotly.subplots import make_subplots
-league_data = pd.read_csv("/home/jack/MSU/CMSE402/Semester_proj/leauge_data.csv")
+league_data = pd.read_csv("leauge_data.csv")
 list_of_stats = ['comppc', 'redznpct', '3rddownpct', 'Sc%', 'pass%']
 cowboys_2023 = [69.7, 56.3, 48.3, 50.3, 56.7]
 chiefs_2003 = [67, 62.7, 42.7, 46.3, 55.2]
-inj = pd.read_csv("/home/jack/MSU/CMSE402/Semester_proj/Streamlit_folder/injuries.csv")
+inj = pd.read_csv("injuries.csv")
 
 
 
