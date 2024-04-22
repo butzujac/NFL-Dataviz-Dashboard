@@ -11,6 +11,8 @@ cowboys_2023 = [69.7, 56.3, 48.3, 50.3, 56.7]
 chiefs_2003 = [67, 62.7, 42.7, 46.3, 55.2]
 inj = pd.read_csv("injuries.csv")
 
+league_2023 = [64.5,54.2,38.8,35.5,53.3]
+leauge_2003 = [58.8,51.1,37.3,30.4,51.3]
 
 
 
@@ -36,10 +38,10 @@ if section == 'Section 1':
     fig = make_subplots(rows=1, cols=2, specs=[[{'type': 'polar'}]*2], subplot_titles=('Cowboys 2023', 'Chiefs 2003'))
 
     # Add radar chart for Cowboys 2023
-    fig.add_trace(go.Scatterpolar(r=cowboys_2023,theta=list_of_stats,fill='toself',name='Cowboys 2023'), row=1, col=1)
+    fig.add_trace(go.Scatterpolar(r=league_2023,theta=list_of_stats,fill='toself',name='Cowboys 2023'), row=1, col=1)
 
     # Add radar chart for Chiefs 2003
-    fig.add_trace(go.Scatterpolar(r=chiefs_2003,theta=list_of_stats,fill='toself',name='Chiefs 2003'), row=1, col=2)
+    fig.add_trace(go.Scatterpolar(r=leauge_2003,theta=list_of_stats,fill='toself',name='Chiefs 2003'), row=1, col=2)
 
     # Update layout with title
     fig.update_layout(
