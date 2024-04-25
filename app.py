@@ -17,6 +17,7 @@ inj = pd.read_csv("injuries.csv")
 league_2023 = [64.5,52.2,38.8,35.5,53.3]
 leauge_2003 = [58.8,51.1,37.3,30.4,51.3]
 st.title('How the NFL has Improved over the Years, and how we can Improve it in the Future')
+st.write("by Jack Butzu")
 
 col1, col2 = st.columns(2)
 with col1:
