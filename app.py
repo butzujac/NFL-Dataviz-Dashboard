@@ -56,6 +56,7 @@ with col2:
     #fig.update_annotations(font=dict(size=5), selector=dict(title_text='League 2003'))
     fig.update_layout(width = 800, height = 400)
     st.plotly_chart(fig)
+    st.write("Less turnovers can cause a better game")
     
 
 col3, col4 = st.columns(2)
